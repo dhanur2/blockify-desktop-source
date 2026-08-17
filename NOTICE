@@ -1,0 +1,10 @@
+Required Notice: Copyright (C) 2026 Blockify contributors
+
+This source distribution is licensed under the PolyForm Noncommercial License
+1.0.0. Commercial use, commercial distribution, and commercial services based
+on this software require a separate written license from the licensor. The
+license does not grant permission to use the Blockify name, logo, or other
+trademarks.
+
+Third-party notices are in THIRD_PARTY_NOTICES.md.  Binary distributions must
+also retain the Electron and Chromium notices supplied with their dependencies.

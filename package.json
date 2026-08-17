@@ -1,0 +1,32 @@
+{
+  "name": "blockify-desktop",
+  "version": "1.9.9",
+  "private": false,
+  "description": "A community-maintained Electron shell for Spotify Web with local media filtering.",
+  "main": "src/main/index.js",
+  "author": {
+    "name": "Blockify contributors"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "engines": {
+    "node": ">=22.12.0 <23",
+    "npm": ">=10 <11"
+  },
+  "packageManager": "npm@10.9.2",
+  "scripts": {
+    "build:preload": "node scripts/build-preload.js",
+    "start": "npm run build:preload && node scripts/run-electron.js",
+    "dev": "npm run build:preload && node scripts/run-electron.js --dev",
+    "lint": "node scripts/check-syntax.js",
+    "test": "node --test",
+    "verify": "npm run build:preload && npm run lint && npm test",
+    "pack": "npm run verify && electron-builder --config electron-builder.config.cjs --dir --publish never",
+    "dist": "npm run verify && electron-builder --config electron-builder.config.cjs --win nsis --publish never"
+  },
+  "devDependencies": {
+    "@electron/fuses": "2.1.3",
+    "electron": "git+https://github.com/castlabs/electron-releases.git#v43.2.0+wvcus",
+    "electron-builder": "26.15.3",
+    "esbuild": "0.28.2"
+  }
+}

@@ -1,0 +1,49 @@
+# Dependencies and generated application output
+node_modules/
+dist/
+release/
+release-*/
+coverage/
+.packaged-smoke-*/
+
+# Local tooling, logs, and operating-system files
+.tools/
+*.log
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+
+# Never commit credentials, signing identities, keys, or local configuration.
+.env
+.env.*
+.envrc
+*.pfx
+*.p12
+*.pvk
+*.ppk
+*.key
+*.pem
+*.crt
+*.cer
+*.jks
+*.keystore
+*.kdbx
+*.token
+*.secret
+*.har
+*.sqlite
+*.sqlite3
+*.dump
+*.bak
+id_ed25519
+id_rsa
+known_hosts
+.npmrc
+browser-profile/
+user-data/
+
+# Release/publishing material belongs outside this source repository.
+deployment/
+artifacts/
+private/

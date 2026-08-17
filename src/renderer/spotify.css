@@ -1,0 +1,4 @@
+[data-testid="ad-companion-card"],
+[data-testid="ad-companion-card-tagline"] {
+  display: none !important;
+}
